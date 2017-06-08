@@ -49,8 +49,8 @@
 
     <div class="navbar-collapse collapse navbar-responsive-collapse">
       <ul class="nav navbar-nav">
-        <% if cookies[:user_id]%>
-           <li><%= link_to "#{User.find_by_id(cookies[:user_id]).name},退出","/sessions/destroy" %></li>
+        <% if session[:user_id]%>
+           <li><%= link_to "#{User.find_by_id(session[:user_id]).name},退出","/sessions/destroy" %></li>
         <% else %>
             <li><%= link_to "用户", new_sessions_path %></li>
         <% end %>
