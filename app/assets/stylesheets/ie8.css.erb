@@ -31,7 +31,7 @@
 	input[type="email"],
 	select,
 	textarea {
-		-ms-behavior: url("assets/js/ie/PIE.htc");
+		-ms-behavior: url(<%= asset_path "PIE.htc" %>);
 		border: solid 1px #ccc;
 		position: relative;
 	}
@@ -43,7 +43,7 @@
 	}
 
 	ul.major-icons li .icon {
-		-ms-behavior: url("assets/js/ie/PIE.htc");
+		-ms-behavior: url(<%= asset_path "PIE.htc" %>);
 		border: solid 1px #ccc;
 		position: relative;
 	}
@@ -71,7 +71,7 @@
 	input[type="button"],
 	button,
 	.button {
-		-ms-behavior: url("assets/js/ie/PIE.htc");
+		-ms-behavior: url(<%= asset_path "PIE.htc" %>);
 		border: solid 1px #ccc;
 		position: relative;
 	}
@@ -79,11 +79,11 @@
 /* Image */
 
 	.image {
-		-ms-behavior: url("assets/js/ie/PIE.htc");
+		-ms-behavior: url<%= asset_path "PIE.htc" %>);
 	}
 
 		.image img {
-			-ms-behavior: url("assets/js/ie/PIE.htc");
+			-ms-behavior: url<%= asset_path "PIE.htc" %>);
 			position: relative;
 		}
 
@@ -92,8 +92,8 @@
 	.main.style2 {
 		background-color: #333;
 		color: #ffffff;
-		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
-		background-image: url("../../images/header.jpg");
+		-ms-behavior: url( <%= asset_path "backgroundsize.min.htc" %>);
+		background-image: url(<%= asset_path "header.jpg" %>);
 		background-size: cover;
 		position: relative;
 	}
@@ -179,7 +179,7 @@
 		}
 
 		.main.style2:before {
-			background-image: url("images/overlay1.png");
+			background-image: url(<%= asset_path "overlay1.png" %>);
 			content: '';
 			height: 100%;
 			left: 0;

@@ -12,6 +12,7 @@
  *
  *= require_tree .
  *= require_self
- *= require font-awesome.min
- *= require main
+ *= require font-awesome.min.css.erb
+ *= require main.css.erb
+ *= require style.css.erb
  */

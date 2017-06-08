@@ -13,7 +13,7 @@
 	}
 
 		#header:before {
-			background-image: url("images/overlay2.png"), url("images/overlay3.svg");
+			background-image: url(<%= asset_path "overlay2.png" %>), url(<%= asset_path "overlay3.png" %>);
 			background-position: top left,							center center;
 			background-size: auto,								cover;
 			content: '';
@@ -38,7 +38,7 @@
 	}
 
 		#footer:before {
-			background-image: url("../images/overlay2.png"), url("../images/overlay4.svg");
+			background-image: url(<%= asset_path "overlay2.png" %>), url(<%= asset_path "overlay4.png" %>);
 			background-position: top left,							center center;
 			background-size: auto,								cover;
 			content: '';
