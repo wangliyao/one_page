@@ -11,7 +11,7 @@ production:
   <<: *default
   database: demo
   username: root
-  password:
+  password: root
   host: localhost
 #
 # Development
@@ -20,7 +20,7 @@ development:
   <<: *default
   database: demo
   username: root
-  password:
+  password: root
   host: localhost
 
 # Warning: The database defined as "test" will be erased and

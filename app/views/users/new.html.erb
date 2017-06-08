@@ -1,0 +1,36 @@
+<style>
+    .aa{
+        background: url(<%= asset_path 'bg1.jpg' %>) no-repeat 0px 0px;
+        font-family: 'Open Sans', sans-serif;
+        background-size:cover;
+        -webkit-background-size:cover;
+        -moz-background-size:cover;
+        -o-background-size:cover;
+        min-height:1050px;
+    }
+</style>
+<div class="aa">
+  <!--SIGN UP-->
+  <h1>注册</h1>
+  <div class="login-form">
+    <div class="close"> </div>
+    <div class="head-info">
+      <label class="lbl-1"> </label>
+      <label class="lbl-2"> </label>
+      <label class="lbl-3"> </label>
+    </div>
+    <div class="clear"> </div>
+    <div class="avtar">
+      <%= image_tag "avtar.png" %>
+    </div>
+    <%= form_for @user,url:users_path,method: :post do |t|%>
+        <%= t.text_field :name,:placeholder=>"用户名" %>
+        <%= t.text_field :email,:placeholder=>"邮箱" %>
+        <div class="key">
+          <%= t.password_field :password,:placeholder=>"密码" %>
+        </div>
+        <%= t.submit '注册'%>
+        <%= link_to "登陆", new_sessions_path%>
+    <% end %>
+  </div>
+</div>
