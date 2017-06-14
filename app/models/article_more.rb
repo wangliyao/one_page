@@ -1,0 +1,2 @@
+class ArticleMore < ApplicationRecord
+end

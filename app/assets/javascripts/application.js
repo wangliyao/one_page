@@ -16,9 +16,13 @@
 //= require turbolinks
 //= require jquery.min
 //= require jquery.scrolly.min
-//= require main
 //= require skel.min
 //= require util
 //= require html5shiv
 //= require respond.min
+//= require jquery-1.11.2.min
+//= require jquery-accordion-menu
+//= require respond
+//= require modernizr
+//= require bootstrap.min
 //= require_tree .

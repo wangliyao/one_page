@@ -1,115 +1,106 @@
 <body>
 
-<!-- Header -->
-<section id="header">
-  <div class="inner">
-    <span class="icon major fa-cloud"></span>
-    <h1>Hi, I'm <strong>Photon</strong>, another fine<br />
-      little freebie from <a href="http://html5up.net">HTML5 UP</a>.</h1>
-    <p>Accumsan feugiat mi commodo erat lorem ipsum, sed magna<br />
-      lobortis feugiat sapien sed etiam volutpat accumsan.</p>
-    <ul class="actions">
-      <li><a href="#one" class="button scrolly">Discover</a></li>
-    </ul>
-  </div>
-</section>
 
-<!-- One -->
-<section id="one" class="main style1">
+<div class="widewrapper main">
   <div class="container">
-    <div class="row 150%">
-      <div class="6u 12u$(medium)">
-        <header class="major">
-          <h2>Lorem ipsum dolor adipiscing<br />
-            amet dolor consequat</h2>
-        </header>
-        <p>Adipiscing a commodo ante nunc accumsan et interdum mi ante adipiscing. A nunc lobortis non nisl amet vis sed volutpat aclacus nascetur ac non. Lorem curae et ante amet sapien sed tempus adipiscing id accumsan.</p>
+    <div class="row">
+      <div class="col-md-8 blog-main">
+     <%= render 'blog_page' %>
+        <div class="paging">
+          <a href="#" class="older">Older Post</a>
+        </div>
       </div>
-      <div class="6u$ 12u$(medium) important(medium)">
-        <span class="image fit"><%=image_tag "pic01.jpg" %></span>
+      <aside class="col-md-4 blog-aside">
+
+        <div class="aside-widget">
+          <header>
+            <h3>Featured Post</h3>
+          </header>
+          <div class="body">
+            <ul class="clean-list">
+              <li><a href="">Clean - Responsive HTML5 Template</a></li>
+              <li><a href="">Responsive Pricing Table</a></li>
+              <li><a href="">Yellow HTML5 Template</a></li>
+              <li><a href="">Blackor Responsive Theme</a></li>
+              <li><a href="">Portfolio Bootstrap Template</a></li>
+              <li><a href="">Clean Slider Template</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="aside-widget">
+          <header>
+            <h3>Related Post</h3>
+          </header>
+          <div class="body">
+            <ul class="clean-list">
+              <li><a href="">Blackor Responsive Theme</a></li>
+              <li><a href="">Portfolio Bootstrap Template</a></li>
+              <li><a href="">Clean Slider Template</a></li>
+              <li><a href="">Clean - Responsive HTML5 Template</a></li>
+              <li><a href="">Responsive Pricing Table</a></li>
+              <li><a href="">Yellow HTML5 Template</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="aside-widget">
+          <header>
+            <h3>Tags</h3>
+          </header>
+          <div class="body clearfix">
+            <ul class="tags">
+              <li><a href="#">HTML5</a></li>
+              <li><a href="#">CSS3</a></li>
+              <li><a href="#">COMPONENTS</a></li>
+              <li><a href="#">TEMPLATE</a></li>
+              <li><a href="#">PLUGIN</a></li>
+              <li><a href="#">BOOTSTRAP</a></li>
+              <li><a href="#">TUTORIAL</a></li>
+              <li><a href="#">UI/UX</a></li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="widewrapper footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-widget">
+          <h3> <i class="fa fa-user"></i>About</h3>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi laboriosam nostrum consequatur fugiat at, labore praesentium modi, quasi dolorum debitis reiciendis facilis, dolor saepe sint nemo, earum molestias quas.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, error aspernatur assumenda quae eveniet.</p>
+        </div>
+
+        <div class="col-md-4 footer-widget">
+          <h3> <i class="fa fa-pencil"></i> Recent Post</h3>
+          <ul class="clean-list">
+            <li><a href="">Clean - Responsive HTML5 Template</a></li>
+            <li><a href="">Responsive Pricing Table</a></li>
+            <li><a href="">Yellow HTML5 Template</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4 footer-widget">
+          <h3> <i class="fa fa-envelope"></i>Contact Me</h3>
+
+          <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil fugiat, cupiditate veritatis excepturi tempore explicabo.</p>
+          <div class="footer-widget-icon">
+            <i class="fa fa-facebook"></i><i class="fa fa-twitter"></i><i class="fa fa-google"></i>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
-</section>
-
-<!--&lt;!&ndash; Two &ndash;&gt;-->
-<section id="two" class="main style2">
-  <div class="container">
-    <div class="row 150%">
-      <div class="6u 12u$(medium)">
-        <ul class="major-icons">
-          <li><span class="icon style1 major fa-code"></span></li>
-          <li><span class="icon style2 major fa-bolt"></span></li>
-          <li><span class="icon style3 major fa-camera-retro"></span></li>
-          <li><span class="icon style4 major fa-cog"></span></li>
-          <li><span class="icon style5 major fa-desktop"></span></li>
-          <li><span class="icon style6 major fa-calendar"></span></li>
-        </ul>
-      </div>
-      <div class="6u$ 12u$(medium)">
-        <header class="major">
-          <h2>Lorem ipsum dolor adipiscing<br />
-            amet dolor consequat</h2>
-        </header>
-        <p>Adipiscing a commodo ante nunc accumsan interdum mi ante adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus nascetur ac non. Lorem curae eu ante amet sapien in tempus ac. Adipiscing id accumsan adipiscing ipsum.</p>
-        <p>Blandit faucibus proin. Ac aliquam integer adipiscing enim non praesent vis commodo nunc phasellus cubilia ac risus accumsan. Accumsan blandit. Lobortis phasellus non lobortis dit varius mi varius accumsan lobortis. Blandit ante aliquam lacinia lorem lobortis semper morbi col faucibus vitae integer placerat accumsan orci eu mi odio tempus adipiscing adipiscing adipiscing curae consequat feugiat etiam dolore.</p>
-        <p>Adipiscing a commodo ante nunc accumsan interdum mi ante adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus nascetur ac non. Lorem curae eu ante amet sapien in tempus ac. Adipiscing id accumsan adipiscing ipsum.</p>
-      </div>
-    </div>
+  <div class="widewrapper copyright">
+    Copyright &copy; 2017.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>
   </div>
-</section>
-
-<!-- Three -->
-<section id="three" class="main style1 special">
-  <div class="container">
-    <header class="major">
-      <h2>Adipiscing amet consequat</h2>
-    </header>
-    <p>Ante nunc accumsan et aclacus nascetur ac ante amet sapien sed.</p>
-    <div class="row 150%">
-      <div class="4u 12u$(medium)">
-        <span class="image fit"><%= image_tag "pic02.jpg" %></span>
-        <h3>Magna feugiat lorem</h3>
-        <p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
-        <ul class="actions">
-          <li><a href="#" class="button">More</a></li>
-        </ul>
-      </div>
-      <div class="4u 12u$(medium)">
-        <span class="image fit"><%= image_tag "pic03.jpg" %></span>
-        <h3>Magna feugiat lorem</h3>
-        <p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
-        <ul class="actions">
-          <li><a href="#" class="button">More</a></li>
-        </ul>
-      </div>
-      <div class="4u$ 12u$(medium)">
-        <span class="image fit"><%= image_tag "pic04.jpg" %></span>
-        <h3>Magna feugiat lorem</h3>
-        <p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
-        <ul class="actions">
-          <li><a href="#" class="button">More</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Four -->
-<section id="four" class="main style2 special">
-  <div class="container">
-    <header class="major">
-      <h2>Ipsum feugiat consequat?</h2>
-    </header>
-    <p>Sed lacus nascetur ac ante amet sapien.</p>
-    <ul class="actions uniform">
-      <li><a href="#" class="button special">Sign Up</a></li>
-      <li><a href="#" class="button">Learn More</a></li>
-    </ul>
-  </div>
-</section>
-<!-- -->
-
-<!-- Scripts -->
-
+</footer>
 </body>

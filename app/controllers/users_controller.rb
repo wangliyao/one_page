@@ -12,4 +12,8 @@ class UsersController < ApplicationController
       render action:new
     end
   end
+
+  def new_page
+
+  end
 end

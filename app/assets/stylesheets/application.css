@@ -15,4 +15,8 @@
  *= require font-awesome.min.css.erb
  *= require main.css.erb
  *= require style.css.erb
+ *= require font-awesome.css.erb
+ *= require jquery-accordion-menu
+ *= require bootstrap.min.css.erb
+ *= require font-awesome.css.erb
  */

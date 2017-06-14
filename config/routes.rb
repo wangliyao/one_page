@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'home/new'
   post 'sessions/create'
   get 'sessions/destroy'
+  get 'users/new_page'
   resource :users
   resource :sessions ,:except=>[:create,:delete]
   root to: "home#index"
