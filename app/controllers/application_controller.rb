@@ -2,6 +2,9 @@ class ApplicationController < ActionController::Base
   before_filter :user_set_up
 
 
+
+  private
+
   def user_set_up
     if params[:name]&&params[:password]
     else
